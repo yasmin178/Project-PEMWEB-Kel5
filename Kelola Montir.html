@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Kelola Montir Page</title>
+</head>
+
+<body>
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Admin - Bengkel Putra Prima</a><p></p>
+            <a href="#">Home  |  Produk & Fasilitas  | Booking  |  Tentang Kami</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li><a class="nav-link" href="shop.html">Produk & Fasilita</a></li>
+                    <li><a class="nav-link" href="about.html">Booking</a></li>
+                    <li><a class="nav-link" href="services.html">Berita</a></li>
+                    <li class="active"><a class="nav-link" href="blog.html">Tentang Kami</a></li>
+                </ul>
+        </div>
+
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <!-- Awal Daftar -->
+    <div class="daftar col-10 row border border-black mt-3 offset-1 mb-5 " style="border: 1px solid white !important; border-radius: 2px;">
+        <div class="card text-bg-success col-12 mb-3" style="background-color: grey;">
+            <div class="card-header text-light">Kelola Montir / Mekanik</div>
+        </div>
+        <div class="fluid col-6">
+            <div class="mb-2 row">
+                <label for="NIM" class="col-4 col-form-label">Nama Mekanik:</label>
+                <div class="col-8">
+                     <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="Prodi" class="col-4 col-form-label">Kategori :</label>
+                <div class="col-8">
+                    <select name="Prodi" id="Prodi" style="height: 35px;">
+                        <option value="Teknik Informatika">Senior Mekanik</option>
+                        <option value="SI">Junior Mekanik</option>
+                        <option value="BD">Multi Mekanik</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="Nama" class="col-4 col-form-label">Deskripsi Skill :</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="Nama">
+                </div>
+            </div>
+
+            <tr>
+                <td>
+                <div class="space"><p>
+                    <label for="kemampuan">Kemampuan</label><br>
+                    <input type="checkbox"  name="serviceringan[]" value="serviceringan">Servive Ringan
+                    <input type="checkbox"  name="servicebesar[]" value="servicebesar">Servive Besar
+                    <input type="checkbox"  name="bodyrepair[]" value="bodyrepair">Body Repair                  
+                </div>
+                </p>
+                </td>
+
+            </tr> 
+            
+            <div class="mb-3 row">
+                <label for="ruangan" class="col-4 col-form-label">Tempat Lahir :</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="ruangan">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="Tanggal Seminar" class="col-4 col-form-label">Tanggal Lahir:</label>
+                <div class="col-8 align-items-center row" style="margin-left: 2px;">
+                    <input type="date" class="col-4" style="height: 35px;">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="ruangan" class="col-4 col-form-label">Telpon :</label>
+                <div class="col-8">
+                    <input type="text" class="form-control" id="ruangan">
+                </div>
+            </div>
+        </div>
+
+        <div class="foto">
+            <form action="/proses-upload" method="post" enctype="multipart/form-data">
+                <label for="file">Pilih Foto:</label>
+                <input type="file" id="file" name="file" accept="image/*">
+            
+                <input type="submit" value="Upload">
+              </form>
+            
+        <img src="images/icon admin.png" alt="foto" width="100p%" height="100p%">
+          </form>
+        </div>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="saveAndRedirect()">Simpan</button>
+    </form>
+
+    <!-- JavaScript to handle button click and redirection -->
+    <script>
+        function saveAndRedirect() {
+            // Perform saving or validation logic here
+
+            // Redirect to the next page
+            redirectToNextPage();
+        }
+
+        function redirectToNextPage() {
+            // Replace 'next_page.html' with the actual URL of the next page
+            window.location.href = 'Daftar Montir.html';
+        }
+    </script>
+
+
+            </td>
+        </tr>
+    </footer>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
